@@ -48,6 +48,14 @@ class HomeActivity extends StatelessWidget{
             IconButton(onPressed: (){MyMessage("Camera",context);}, icon: Icon(Icons.camera_alt)),
           ],
         ),
+        floatingActionButton: FloatingActionButton(
+          elevation: 10,
+          backgroundColor: Colors.redAccent,
+          onPressed: () {
+            MyMessage("this is floating action button",context);
+          },
+          child: Icon(Icons.add),
+        ),
         body: const Text("Hello World!"),
     );
   }
